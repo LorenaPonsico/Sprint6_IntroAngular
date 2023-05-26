@@ -1,2 +1,10 @@
-<p>{{ phrase }}</p>
+<!-- <p>{{ phrase }}</p> -->
 
+    <ul *ngFor="let sentence of Story">
+        <div>
+            <p> {{sentence.historyOne}} </p>
+            <p> {{sentence.historyTwo}} </p>
+            <p> {{sentence.historyThree}} </p>
+            <p> {{sentence.historyFour}} </p>
+        </div>
+    </ul>
