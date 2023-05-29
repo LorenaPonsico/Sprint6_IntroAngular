@@ -1,10 +1,40 @@
-<!-- <p>{{ phrase }}</p> -->
+<div class="container-fluid">
+    <ul class="list-group list-group-flush">
+        <div class="d-flex">
 
-    <ul *ngFor="let sentence of Story">
-        
-            <p class="sentence-box"> {{sentence.sentenceOne}} </p>
-            <p class="sentence-box"> {{sentence.sentenceTwo}} </p>
-            <p class="sentence-box"> {{sentence.sentenceThree}} </p>
-            <p class="sentence-box"> {{sentence.sentenceFour}} </p>
-    
+            <button (click)="previous()" type="submit" class=" col-6 btn btn-primary">
+                Previous
+            </button>
+
+            <button (click)="next()" type="submit" class=" col-6 btn btn-primary">
+                Next
+            </button>
+        </div>
+
+
+
+
+        <li *ngFor="let sentence of stories; 
+                    let i = index;
+                    " class="list-group-item d-flex justify-content-between align-items-center">
+            <div class="col-12">
+                <div class="f-flex flex-column">
+                    <div class="col-12 sentence-box"
+                        [ngClass]="{ 'sentence--selected': currentSentence === i }">
+                        {{ sentence.sentenceOne }}</div>
+                    <div class="col-12 sentence-box"
+                        [ngClass]="{ 'sentence--selected': currentSentence === i+1 }">
+                        {{ sentence.sentenceTwo }}</div>
+                    <div class="col-12 sentence-box"
+                        [ngClass]="{ 'sentence--selected': currentSentence === i+2}">
+                        {{ sentence.sentenceThree }}</div>
+                    <div class="col-12 sentence-box"
+                        [ngClass]="{ 'sentence--selected': currentSentence === i+3}">
+                        {{ sentence.sentenceFour }}</div>
+                </div>
+            </div>
+
+        </li>
     </ul>
+
+</div>
