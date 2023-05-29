@@ -1,1 +1,10 @@
-<app-escena [stories]="stories"></app-escena>
+<div class="container">
+
+    <div class="row align-items-center ">
+
+        <h1 class="col-12" *ngIf="showSection === false" >welcome to the story</h1>
+        <button class=" d-flex justify-content-center col-6" *ngIf="showSection === false" (click)="onShowSection()">Start</button>
+        <app-escena *ngIf="showSection === true" [stories]="stories"></app-escena>
+        
+    </div>
+</div>

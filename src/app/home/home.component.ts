@@ -17,4 +17,11 @@ export class HomeComponent {
     sentenceFour: "Mentrestant, altres heroes no van tenir tanta sort en la seva elecció ...",
     
   }]
+  public showSection: boolean = false ;
+ 
+ 
+  onShowSection() {
+    this.showSection = true;
+  }
 }
+
