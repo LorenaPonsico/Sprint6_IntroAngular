@@ -1,11 +1,10 @@
 <div class="container-fluid">
 
     <div class="row ">
-        <h1 class="col-12" *ngIf="showSection === false">Welcome to the Story</h1>
-        <p class="description">Using two buttons users can move forward or backward in the tips, changing the text and the background image.</p>
-        <button class=" col-6 btn btn-light " 
-            *ngIf="showSection === false"
-            (click)="onShowSection()">Start</button>
+        <h1 class="title col-12" *ngIf="showSection === false">WELCOME</h1>
+        <p class="description" *ngIf="showSection === false">
+            Press the button to start reading the story using the next and previous buttons.</p>
+        <button class=" col-6 btn btn-light " *ngIf="showSection === false" (click)="onShowSection()">Start</button>
         <app-escena class="stories" *ngIf="showSection === true" [stories]="stories"></app-escena>
     </div>
 

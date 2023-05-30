@@ -1,10 +1,20 @@
-h1,
-button,
-.description {
-    display: block;
+.container-fluid {
     text-align: center;
+}
+
+button {
     margin: 50px auto;
-    font-family:'Times New Roman', Times, serif;
+}
+
+.description {
+    margin: 30px auto;
+    font-size: 15px;
+}
+
+.title {
+    margin: 150px auto;
+    font-size: 40px;
+    font-family:monospace;
 }
 
 .stories {
