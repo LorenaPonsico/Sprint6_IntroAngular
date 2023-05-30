@@ -1,23 +1,17 @@
 .sentence-box {
-    border: 3px solid black;
+    border: 2px solid black;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 25px;
     text-align: center;
   }
 
-  /* .highlighted {
-    background-color: yellow;
-  } */
-
   .sentence {
-    display: flex;
     justify-content: center;
-    font-size: 15px;
 }
 
 .sentence--selected {
-    background-color: rgb(255, 192, 203);
+    background-color: rgb(240, 195, 203);
 }
 
 .sentence--not-selected {

@@ -1,7 +1,12 @@
-.h1{
- 
-    justify-content: center;
-   
+h1,
+button,
+.description {
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+    font-family:'Times New Roman', Times, serif;
+}
 
-
+.stories {
+    margin-top: 30px;
 }

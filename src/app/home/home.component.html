@@ -1,10 +1,12 @@
-<div class="container">
+<div class="container-fluid">
 
-    <div class="row align-items-center ">
-
-        <h1 class="col-12" *ngIf="showSection === false" >welcome to the story</h1>
-        <button class=" d-flex justify-content-center col-6" *ngIf="showSection === false" (click)="onShowSection()">Start</button>
-        <app-escena *ngIf="showSection === true" [stories]="stories"></app-escena>
-        
+    <div class="row ">
+        <h1 class="col-12" *ngIf="showSection === false">Welcome to the Story</h1>
+        <p class="description">Using two buttons users can move forward or backward in the tips, changing the text and the background image.</p>
+        <button class=" col-6 btn btn-light " 
+            *ngIf="showSection === false"
+            (click)="onShowSection()">Start</button>
+        <app-escena class="stories" *ngIf="showSection === true" [stories]="stories"></app-escena>
     </div>
+
 </div>
