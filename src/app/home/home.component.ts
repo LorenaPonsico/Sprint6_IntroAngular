@@ -7,7 +7,6 @@ import { Text } from './interfaces/text.interface';
 })
 export class HomeComponent {
 
-  @Input()
   public stories: Text[] = [
     {
       text: "El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial",
